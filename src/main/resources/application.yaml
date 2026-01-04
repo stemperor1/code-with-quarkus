@@ -1,0 +1,20 @@
+quarkus:
+  application:
+    name: "quarkus-demo"
+  http:
+    port: 8888
+
+  datasource:
+    db-kind: postgresql
+    jdbc:
+      url: ${JDBC_URL}
+      # 添加数据库连接池配置
+      max-size: 20
+      min-size: 5
+
+  hibernate-orm:
+    database:
+      generation: drop-and-create # 在开发环境中自动创建表
+    sql:
+      log: true # 开启SQL日志
+

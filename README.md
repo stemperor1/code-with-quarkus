@@ -78,3 +78,6 @@ Easily start your REST Web Services
 Monitor your application's health using SmallRye Health
 
 [Related guide section...](https://quarkus.io/guides/smallrye-health)
+
+### 发布生产注意事项
+- quarkus.datasource.devservices.enabled=false  ##会启动额外的服务
